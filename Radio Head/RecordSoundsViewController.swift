@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  Radio Head
 //
 //  Created by arm on 11/27/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordSoundsViewController: UIViewController {
     @IBOutlet weak var RecordingInProgress: UILabel!
     
     @IBOutlet weak var stopButton: UIButton!
