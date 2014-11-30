@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var RecordingInProgress: UILabel!
+    
+    @IBOutlet weak var stopButton: UIButton!
+    
+    @IBOutlet weak var recordButton: UIButton!
+    
+    @IBAction func stopAudio(sender: UIButton) {
+        RecordingInProgress.hidden = true
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +29,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func viewWillAppear(animated: Bool) {
+        stopButton.hidden = true
+        recordButton.enabled = true
+    }
 
+    @IBAction func RecordAudio(sender: UIButton) {
+        RecordingInProgress.hidden = false
+        stopButton.hidden = false
+        recordButton.enabled = false
+        println("in record")
+    }
 
 }
 
