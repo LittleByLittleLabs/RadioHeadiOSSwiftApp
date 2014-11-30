@@ -26,6 +26,11 @@ class PlaySoundsViewController: UIViewController {
         }
     }
 
+    @IBAction func playFastAudio(sender: UIButton) {
+        audioPlayer.currentTime = 0.0
+        audioPlayer.rate = 1.5
+        audioPlayer.play()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,7 +38,11 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func playSlowAudio(sender: UIButton) {
         audioPlayer.rate = 0.5
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
+    }
+    @IBAction func stopPlayAudio(sender: UIButton) {
+        audioPlayer.stop()
     }
 
     /*

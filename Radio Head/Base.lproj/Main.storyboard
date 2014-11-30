@@ -80,20 +80,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-HN-yCd">
-                                <rect key="frame" x="85" y="136" width="155" height="100"/>
-                                <state key="normal" title="Button" image="slow">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-HN-yCd">
+                                <rect key="frame" x="25" y="109" width="155" height="100"/>
+                                <state key="normal" image="slow">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="playSlowAudio:" destination="REU-iW-4gE" eventType="touchUpInside" id="Nt5-A7-WJu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95n-V9-Pid">
+                                <rect key="frame" x="451" y="109" width="100" height="100"/>
+                                <state key="normal" image="fast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="REU-iW-4gE" eventType="touchUpInside" id="YC5-aW-I0K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkt-Ms-0YN">
+                                <rect key="frame" x="275" y="448" width="50" height="50"/>
+                                <state key="normal" image="stop-1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopPlayAudio:" destination="REU-iW-4gE" eventType="touchUpInside" id="nx3-al-7BZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wra-HN-yCd" firstAttribute="top" secondItem="8rF-AY-cGW" secondAttribute="bottom" constant="72" id="JKD-o9-czL"/>
-                            <constraint firstItem="Wra-HN-yCd" firstAttribute="leading" secondItem="Gfy-o8-GId" secondAttribute="leadingMargin" constant="69" id="kdd-KW-XoV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="95n-V9-Pid" secondAttribute="trailing" constant="30" id="Hnd-En-GA0"/>
+                            <constraint firstItem="Wra-HN-yCd" firstAttribute="top" secondItem="8rF-AY-cGW" secondAttribute="bottom" constant="80" id="JKD-o9-czL"/>
+                            <constraint firstItem="95n-V9-Pid" firstAttribute="top" secondItem="8rF-AY-cGW" secondAttribute="bottom" constant="80" id="PLo-qU-ny5"/>
+                            <constraint firstAttribute="centerY" secondItem="lkt-Ms-0YN" secondAttribute="centerY" constant="-173" id="hna-yA-8RP"/>
+                            <constraint firstItem="TM0-Oc-m9y" firstAttribute="top" secondItem="lkt-Ms-0YN" secondAttribute="bottom" constant="102" id="isI-Du-aTK"/>
+                            <constraint firstAttribute="centerX" secondItem="lkt-Ms-0YN" secondAttribute="centerX" id="jxl-nB-Xhv"/>
+                            <constraint firstItem="Wra-HN-yCd" firstAttribute="leading" secondItem="Gfy-o8-GId" secondAttribute="leadingMargin" constant="30" id="kdd-KW-XoV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -121,8 +144,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
+        <image name="stop-1" width="50" height="50"/>
     </resources>
 </document>
