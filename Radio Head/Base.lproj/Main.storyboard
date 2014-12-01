@@ -116,12 +116,31 @@
                                     <action selector="playChipmunkAudio:" destination="REU-iW-4gE" eventType="touchUpInside" id="GPS-nk-Agr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKN-aW-Iir">
+                                <rect key="frame" x="448" y="340" width="100" height="100"/>
+                                <state key="normal" image="darthvader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeT-0i-smF">
+                                <rect key="frame" x="448" y="340" width="100" height="100"/>
+                                <state key="normal" image="darthvader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="a:" destination="REU-iW-4gE" eventType="touchUpInside" id="rPW-Bx-n0p"/>
+                                    <action selector="playDarthvaderAudio:" destination="REU-iW-4gE" eventType="touchUpInside" id="StP-f0-iWP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="rsz-hv-YiK" secondAttribute="centerY" constant="-90" id="1zN-dN-kLF"/>
+                            <constraint firstItem="TM0-Oc-m9y" firstAttribute="top" secondItem="ZKN-aW-Iir" secondAttribute="bottom" constant="160" id="5Bl-PT-7Iq"/>
+                            <constraint firstAttribute="centerY" secondItem="ZKN-aW-Iir" secondAttribute="centerY" constant="-90" id="7XH-Bf-R91"/>
                             <constraint firstItem="rsz-hv-YiK" firstAttribute="leading" secondItem="Gfy-o8-GId" secondAttribute="leadingMargin" constant="36" id="GB8-gK-kvI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="95n-V9-Pid" secondAttribute="trailing" constant="30" id="Hnd-En-GA0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZKN-aW-Iir" secondAttribute="trailing" constant="36" id="IFa-g5-H0r"/>
                             <constraint firstItem="Wra-HN-yCd" firstAttribute="top" secondItem="8rF-AY-cGW" secondAttribute="bottom" constant="80" id="JKD-o9-czL"/>
                             <constraint firstItem="95n-V9-Pid" firstAttribute="top" secondItem="8rF-AY-cGW" secondAttribute="bottom" constant="80" id="PLo-qU-ny5"/>
                             <constraint firstAttribute="centerY" secondItem="lkt-Ms-0YN" secondAttribute="centerY" constant="-173" id="hna-yA-8RP"/>
@@ -157,6 +176,7 @@
     </scenes>
     <resources>
         <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>

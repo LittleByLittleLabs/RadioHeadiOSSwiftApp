@@ -17,7 +17,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     
     var audioRecorder: AVAudioRecorder!
-    var recordedAudio:RecordedAudio!
+    var recordedAudio: RecordedAudio!
     
     @IBAction func stopAudio(sender: UIButton) {
         RecordingInProgress.hidden = true
