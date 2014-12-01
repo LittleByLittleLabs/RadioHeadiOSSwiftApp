@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1228B6CA1A2B912D00561ACB /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228B6C91A2B912D00561ACB /* PlaySoundsViewController.swift */; };
 		1228B6CE1A2BA10700561ACB /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1228B6CD1A2BA10700561ACB /* movie_quote.mp3 */; };
+		1228B6D01A2BEC6000561ACB /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228B6CF1A2BEC6000561ACB /* RecordedAudio.swift */; };
 		12E505071A2717890045A82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E505061A2717890045A82F /* AppDelegate.swift */; };
 		12E505091A2717890045A82F /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E505081A2717890045A82F /* RecordSoundsViewController.swift */; };
 		12E5050C1A2717890045A82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E5050A1A2717890045A82F /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		1228B6C91A2B912D00561ACB /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		1228B6CD1A2BA10700561ACB /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		1228B6CF1A2BEC6000561ACB /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		12E505011A2717890045A82F /* Radio Head.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Head.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E505051A2717890045A82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E505061A2717890045A82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				12E5050D1A2717890045A82F /* Images.xcassets */,
 				12E5050F1A2717890045A82F /* LaunchScreen.xib */,
 				12E505041A2717890045A82F /* Supporting Files */,
+				1228B6CF1A2BEC6000561ACB /* RecordedAudio.swift */,
 			);
 			path = "Radio Head";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1228B6D01A2BEC6000561ACB /* RecordedAudio.swift in Sources */,
 				12E505091A2717890045A82F /* RecordSoundsViewController.swift in Sources */,
 				1228B6CA1A2B912D00561ACB /* PlaySoundsViewController.swift in Sources */,
 				12E505071A2717890045A82F /* AppDelegate.swift in Sources */,

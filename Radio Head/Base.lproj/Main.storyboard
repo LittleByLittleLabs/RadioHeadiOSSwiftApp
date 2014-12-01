@@ -39,7 +39,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z02-R1-3Ks"/>
-                                    <segue destination="REU-iW-4gE" kind="show" id="mwb-kk-kCC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,11 +61,12 @@
                         <outlet property="RecordingInProgress" destination="SzZ-jo-5oG" id="exK-MW-yeb"/>
                         <outlet property="recordButton" destination="pvf-S0-Ge5" id="V2C-Iv-gMz"/>
                         <outlet property="stopButton" destination="uXo-mJ-WN4" id="lD7-dC-WTS"/>
+                        <segue destination="REU-iW-4gE" kind="show" identifier="stopRecording" id="LQ2-XW-ZAP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="550"/>
+            <point key="canvasLocation" x="747" y="556"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="pJA-hZ-cRB">
